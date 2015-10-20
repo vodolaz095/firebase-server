@@ -29,7 +29,7 @@ function FirebaseServer(wsOptions, name, data) {
 	this._wss = new WebSocketServer(wsOptions);
 
 	this._wss.on('connection', this.handleConnection.bind(this));
-	_log('Listening for connections on port ' + port);
+	_log('Listening for connections');
 }
 
 FirebaseServer.prototype = {
